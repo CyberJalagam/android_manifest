@@ -2,7 +2,8 @@
  HackermanOS 
  ==============
 
-An Android Custom ROM, That aims to provide Stability, Security & Speed. #HackermanOS : Developed with <3 by TechyMinati (Aryan Sinha)
+* An Android Custom ROM, That aims to provide Stability, Security & Speed. #HackermanOS 
+* Developed with <3 by TechyMinati (Aryan Sinha)
 
 Firstly you'll need to get familiar with [Repo](https://source.android.com/source/using-repo.html) and Version Control with [Git](https://source.android.com/source/version-control.html).
 
