@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="HackermanOS"
+           revision="eleven"
+           fetch="https://github.com/HackermanOS" />
+
+  <!-- HackermanOS Repos -->
+  <project name="android_build" path="build/make" remote="HackermanOS" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project name="android_build_soong" path="build/soong" remote="HackermanOS" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- External -->
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="HackermanOS" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="HackermanOS" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="HackermanOS" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="HackermanOS" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="HackermanOS" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="HackermanOS" />
+
+  <!-- Packages -->
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="HackermanOS" />
+
+  <!-- Vendor -->
+  <project path="vendor/HackermanOS" name="android_vendor_HackermanOS" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="HackermanOS" />
+
+</manifest>
