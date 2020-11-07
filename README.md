@@ -5,7 +5,7 @@
 * An Android Custom ROM, That aims to provide Stability, Security & Speed. #HackermanOS 
 * Developed with <3 by TechyMinati (Aryan Sinha)
 
-<img src="https://avatars3.githubusercontent.com/u/74102794?s=400&u=304649140f93e8c5a0fd6a4117a2958aefe47664&v=4" width="350" height="350"/>
+<img src="https://avatars0.githubusercontent.com/u/74102794?s=400&u=1d15942efa42c2efa2beba8b21ba20684146d1a6&v=4" width="400" height="400"/>
 
 Firstly you'll need to get familiar with [Repo](https://source.android.com/source/using-repo.html) and Version Control with [Git](https://source.android.com/source/version-control.html).
 
