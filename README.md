@@ -30,7 +30,7 @@ From root directory of Project, perform following commands in terminal
 
 ```bash
 $ . build/envsetup.sh
-$ lunch fusion_$device-userdebug
+$ lunch HackermanOS_$device-userdebug
 $ brunch <device_codename>
 ```
 ---------------------------------------------------------------------------------------
