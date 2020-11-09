@@ -59,36 +59,58 @@
   <remove-project name="device/sample" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
-
-  <!-- Prebuilts -->
-  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
-  <remove-project name="platform/prebuilts/go/darwin-x86" />
-  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
-
-  <!-- External Repos -->
-  <remove-project name="platform/external/tinycompress" />
-
+  <remove-project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="HackermanOS" />
+  <remove-project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="HackermanOS" />
+  <remove-project path="device/HackermanOS/sepolicy" name="android_device_HackermanOS_sepolicy" remote="HackermanOS" />
+  
+  <!-- External -->
+  <remove-project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
+  <remove-project path="external/selinux" name="android_external_selinux" remote="HackermanOS" />
+  
   <!-- Frameworks -->
-  <remove-project name="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/native" />
-  <remove-project name="platform/frameworks/av" />
-  <remove-project name="platform/frameworks/opt/telephony" />
-
-  <!-- General repos -->
-  <remove-project name="platform/build" />
-  <remove-project name="platform/build/soong" />
+  <remove-project path="frameworks/av" name="android_frameworks_av" remote="HackermanOS" />
+  <remove-project path="frameworks/native" name="android_frameworks_native" remote="HackermanOS" />
+  <remove-project path="frameworks/base" name="android_frameworks_base" remote="HackermanOS" />
+  <remove-project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="HackermanOS" />
+  <remove-project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="HackermanOS" />
+  <remove-project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="HackermanOS" />
 
   <!-- Hardware -->
-  <remove-project name="platform/hardware/interfaces" />
-  <remove-project name="platform/hardware/libhardware" />
-
+  <remove-project path="hardware/interfaces" name="android_hardware_interfaces" remote="HackermanOS" />
+  <remove-project path="hardware/hackermanos/interfaces " name="android_hardware_hackermanos_interfaces " remote="HackermanOS" />
+  <remove-project path="hardware/libhardware/legacy" name="android_hardware_libhardware_legacy" remote="HackermanOS" />
+  <remove-project path="hardware/fuse/interfaces" name="android_hardware_fuse_interfaces" remote="HackermanOS" />
+  <remove-project name="hardware_qcom_bootctrl"      path="hardware/qcom/bootctrl"      remote="HackermanOS" />
+  <remove-project name="hardware_qcom_bt"            path="hardware/qcom-caf/bt"   remote="HackermanOS" />
+  <remove-project name="hardware_qcom_bt"            path="hardware/qcom/bt"       remote="HackermanOS" />
+  <remove-project name="hardware_qcom_wlan"          path="hardware/qcom-caf/wlan" remote="HackermanOS" />
+  <remove-project name="hardware_knowles_athletico_sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" remote="HackermanOS" />
+  
+  <!-- Prebuilts -->
+  <remove-project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="HackermanOS" />
+  <remove-project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="HackermanOS" />
+  
   <!-- Packages -->
-  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" remote="HackermanOS" />
+  <remove-project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="HackermanOS" />
+  <remove-project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="HackermanOS" />
+  <remove-project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="HackermanOS" />
+  <remove-project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="HackermanOS" />
+  <remove-project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="HackermanOS" />
+  <remove-project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="HackermanOS" />
+  <remove-project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="HackermanOS" />
+  <remove-project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="HackermanOS" />
+  <remove-project path="packages/apps/HackermanOSLauncher" name="android_packages_apps_HackermanOSLauncher" remote="HackermanOS" />
+  <remove-project path="packages/apps/Settingsintelligence" name="android_packages_apps_Settingsintelligence" remote="HackermanOS" />
+  <remove-project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="HackermanOS" />
+  <remove-project path="packages/apps/ExactCalculator " name="android_packages_apps_ExactCalculator " remote="HackermanOS" />
+  <remove-project path="packages/apps/DocumentsUI" name=" android_packages_apps_DocumentsUI" remote="HackermanOS" />
+  <remove-project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="HackermanOS" />
+  <remove-project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="HackermanOS" />
 
+  <!-- System Repos -->
+  <remove-project path="system/bt" name="android_system_bt" remote="HackermanOS" />
+  <remove-project path="system/core" name="android_system_core" remote="HackermanOS" />
+  <remove-project path="system/sepolicy" name="android_system_sepolicy" remote="HackermanOS" />
+  
 </manifest>
