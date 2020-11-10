@@ -60,7 +60,6 @@
   <project path="hardware/libhardware/legacy" name="android_hardware_libhardware_legacy" remote="HackermanOS" />
   <project path="hardware/fuse/interfaces" name="android_hardware_fuse_interfaces" remote="HackermanOS" />
   <project name="hardware_qcom_wlan"          path="hardware/qcom-caf/wlan" remote="HackermanOS" />
-  <project name="hardware_knowles_athletico_sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" remote="HackermanOS" />
   
 
   <!-- Prebuilts -->
