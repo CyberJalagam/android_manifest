@@ -45,7 +45,6 @@
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="HackermanOS" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="HackermanOS" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="HackermanOS" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="HackermanOS" />
 
   <!-- External -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
