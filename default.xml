@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <revision="eleven"
+  <remote  name="HackermanOS"
+           revision="eleven"
            fetch="https://github.com/HackermanOS" />
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
