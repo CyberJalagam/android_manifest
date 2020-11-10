@@ -20,24 +20,109 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- CodeAurora additions -->
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="HackermanOS" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="HackermanOS">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="HackermanOS" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="HackernmanOS" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="HackermanOS" />
+
   <!-- External -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
-
+  <project path="external/selinux" name="android_external_selinux" remote="HackermanOS" />
+  
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="HackermanOS" />
   <project path="frameworks/native" name="android_frameworks_native" remote="HackermanOS" />
   <project path="frameworks/base" name="android_frameworks_base" remote="HackermanOS" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="HackermanOS" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="HackermanOS" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="HackermanOS" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="HackermanOS" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="HackermanOS" />
+  <project path="hardware/hackermanos/interfaces " name="android_hardware_hackermanos_interfaces " remote="HackermanOS" />
+  <project path="hardware/libhardware/legacy" name="android_hardware_libhardware_legacy" remote="HackermanOS" />
+  <project path="hardware/fuse/interfaces" name="android_hardware_fuse_interfaces" remote="HackermanOS" />
+  <project name="hardware_qcom_bootctrl"      path="hardware/qcom/bootctrl"      remote="HackermanOS" />
+  <project name="hardware_qcom_bt"            path="hardware/qcom-caf/bt"   remote="HackermanOS" />
+  <project name="hardware_qcom_bt"            path="hardware/qcom/bt"       remote="HackermanOS" />
+  <project name="hardware_qcom_wlan"          path="hardware/qcom-caf/wlan" remote="HackermanOS" />
+  <project name="hardware_knowles_athletico_sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" remote="HackermanOS" />
+  
 
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="HackermanOS" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="HackermanOS" />
+  
   <!-- Packages -->
+  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" remote="HackermanOS" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="HackermanOS" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="HackermanOS" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="HackermanOS" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="HackermanOS" />
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="HackermanOS" />
+  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="HackermanOS" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="HackermanOS" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="HackermanOS" />
+  <project path="packages/apps/HackermanOSLauncher" name="android_packages_apps_HackermanOSLauncher" remote="HackermanOS" />
+  <project path="packages/apps/Settingsintelligence" name="android_packages_apps_Settingsintelligence" remote="HackermanOS" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="HackermanOS" />
+  <project path="packages/apps/ExactCalculator " name="android_packages_apps_ExactCalculator " remote="HackermanOS" />
+  <project path="packages/apps/DocumentsUI" name=" android_packages_apps_DocumentsUI" remote="HackermanOS" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="HackermanOS" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="HackermanOS" />
 
   <!-- Vendor -->
   <project path="vendor/HackermanOS" name="android_vendor_HackermanOS" remote="HackermanOS" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="HackermanOS" />
+  <project path="vendor/qcom/opensource/audio " name="android_vendor_qcom_opensource_audio" remote="HackermanOS" />
+  <project path="vendor/HackermanUI" name="android_vendor_HackermanUI" remote="HackermanOS" />
+  
+  <!-- System Repos -->
+  <project path="system/bt" name="android_system_bt" remote="HackermanOS" />
+  <project path="system/core" name="android_system_core" remote="HackermanOS" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="HackermanOS" />
+  
+  <!-- Device Repos -->
+  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="HackermanOS" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="HackermanOS" />
+  <project path="device/HackermanOS/sepolicy" name="android_device_HackermanOS_sepolicy" remote="HackermanOS" />
+  
 
 </manifest>
