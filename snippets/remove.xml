@@ -59,9 +59,6 @@
   <remove-project name="device/sample" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
-  <remove-project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="HackermanOS" />
-  <remove-project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="HackermanOS" />
-  <remove-project path="device/HackermanOS/sepolicy" name="android_device_HackermanOS_sepolicy" remote="HackermanOS" />
   
   <!-- External -->
   <remove-project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
