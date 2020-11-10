@@ -56,7 +56,6 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="HackermanOS" />
 
   <!-- Hardware -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="HackermanOS" />
   <project path="hardware/hackermanos/interfaces " name="android_hardware_hackermanos_interfaces " remote="HackermanOS" />
   <project path="hardware/libhardware/legacy" name="android_hardware_libhardware_legacy" remote="HackermanOS" />
   <project path="hardware/fuse/interfaces" name="android_hardware_fuse_interfaces" remote="HackermanOS" />
