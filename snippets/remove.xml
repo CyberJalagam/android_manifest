@@ -61,7 +61,6 @@
   <remove-project name="device/ti/beagle-x15-kernel" />
   
   <!-- External -->
-  <remove-project path="external/tinycompress" name="android_external_tinycompress" remote="HackermanOS" />
   <remove-project path="external/selinux" name="android_external_selinux" remote="HackermanOS" />
   
   <!-- Frameworks -->
